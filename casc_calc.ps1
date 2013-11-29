@@ -1,4 +1,5 @@
 # 
+# Powershell skisse av kaskadekalkulatoren som forhåpentligvis blir en webapp
 # cascade_calc.ps1
 # cascade gas calculation
 # Definer gjeldene trykk på banken, kan evt hentes automatisk eller tastes inn på forhånd...
@@ -28,7 +29,7 @@ while($pressure -lt $fillPressure){
 		}
 
 # 
-# Om fyllingen krever flere flasker en vi har definert vil ikke fyllingen være mulig.
+# Om fyllingen krever flere flasker en vi har definert, vil ikke fyllingen være mulig.
 #
 		else{
 			write-host "Mix ikke mulig, da trykket wil bli for lavt på den siste bankflasken" $i $bank[$i] "ønsket trykk er: $fillPressure"
